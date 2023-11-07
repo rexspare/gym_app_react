@@ -6,7 +6,7 @@ import { exerciseOptions, fetchData } from '../utils/fetchData';
 import ExerciseCard from './ExerciseCard';
 import Loader from './Loader';
 
-const Exercises = ({ exercises, setExercises, bodyPart }) => {
+const Exercises = ({ exercises, setExercises = () => {}, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [exercisesPerPage] = useState(6);
 
